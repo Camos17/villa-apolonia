@@ -1,0 +1,1148 @@
+/* FUENTES */
+@import url('https://fonts.googleapis.com/css?family=Rozha+One');
+
+/* ESTILOS GENERALES */
+html, body {
+	width: 100%;
+	overflow-X: hidden;
+}
+
+body.modal-open {
+	padding-right: 0px !important;
+}
+
+.modalFormReservas.show {
+	padding-right: 0px !important;
+	overflow-y: auto;
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+a, button {
+	outline: 0 !important;
+}
+
+ul, ol {
+	list-style: none;
+}
+
+h1 {
+	font-family: 'PT Serif', serif;
+	font-size: 4.6rem;
+	font-weight: 600;
+	line-height: 71px;
+	margin-bottom: -11px;
+}
+
+h1.second {
+	margin-bottom: 2px;
+}
+
+button:hover, button:active, button:focus {
+	background-color: transparent !important;
+}
+ 
+.buttonGeneral {
+	background-color: transparent;
+	border: none;
+	font-size: 1.75rem;
+}
+
+.btnGeneralAction {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 900;
+	padding: 0.7rem 0.75rem;
+	border: none;
+	border-radius: 25px;
+	-webkit-box-shadow: 0px 4px 5px -1px rgba(223,223,227,1) !important;
+	-moz-box-shadow: 0px 4px 5px -1px rgba(223,223,227,1) !important;
+	box-shadow: 0px 4px 5px -1px rgba(223,223,227,1) !important;
+}
+
+.btnGeneralAction:hover, .btnGeneralAction:active, .btnGeneralAction:focus {
+	color: #FFCD97;
+	background-color: #00082D !important;
+	border: none;
+}
+
+.no-padding {
+	padding: 0px;
+}
+
+.bgColor-lightOrange {
+	background-color: #FFCD97;
+}
+
+.bgColor-darkBlue {
+	background-color: #00082D;
+}
+
+.textLightOrange {
+	color: #FFCD97;
+}
+
+.textDarkBlue {
+	color: #00082D;
+}
+
+/* HELPERS */
+
+.showHeaderMenu {
+	-webkit-transform: translate3d(0, 0, 0) !important;
+	-moz-transform: translate3d(0, 0, 0) !important;
+	-ms-transform: translate3d(0, 0, 0) !important;
+	-o-transform: translate3d(0, 0, 0) !important;
+	transform: translate3d(0, 0, 0) !important;
+	-webkit-transition: transform ease-in-out 0.5s !important;
+	-moz-transition: transform ease-in-out 0.5s !important;
+	-ms-transition: transform ease-in-out 0.5s !important;
+	-o-transition: transform ease-in-out 0.5s !important;
+	transition: transform ease-in-out 0.5s !important;
+}
+
+.hideHeaderMenu {
+	-webkit-transform: translate3d(0, -100%, 0) !important;
+	-moz-transform: translate3d(0, -100%, 0) !important;
+	-ms-transform: translate3d(0, -100%, 0) !important;
+	-o-transform: translate3d(0, -100%, 0) !important;
+	transform: translate3d(0, -100%, 0) !important;
+	-webkit-transition: transform ease-in-out 0.5s !important;
+	-moz-transition: transform ease-in-out 0.5s !important;
+	-ms-transition: transform ease-in-out 0.5s !important;
+	-o-transition: transform ease-in-out 0.5s !important;
+	transition: transform ease-in-out 0.5s !important;
+}
+
+/* PRE-LOADER */
+
+.bluePre-loader {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	background-color: #00082D;
+	z-index: 1080;
+}
+
+.bluePre-loader div {
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.lightPre-loader {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	background-color: #FFCD97;
+	z-index: 1070;
+}
+
+.lightPre-loader .contLoader {
+	top: 50%;
+	-webkit-transform: translateY(-28%);
+	-moz-transform: translateY(-28%);
+	-o-transform: translateY(-28%);
+	-ms-transform: translateY(-28%);
+	transform: translateY(-28%);
+}
+
+.lightPre-loader .percentLoader {
+	color: #FFF;
+	font-family: 'Rozha One', serif;
+	font-size: 3rem;
+}
+
+.lightPre-loader .percentLoader span {
+	display: block;
+	margin-top: 2rem;
+	text-align: center;
+}
+
+
+/* HEADER */
+.navbarHeader {
+	height: 70px;
+	z-index: 10;
+}
+
+.navbarHeader .navbar-brand {
+	margin-top: 5px;
+}
+
+.navbarHeader .navbar-brand img {
+	height: inherit;
+}
+
+.navbar-toggler {
+	border-radius: 50%;
+	padding: 0.38rem 0.65rem;
+	border: 1.5px solid #00082D;
+}
+
+.navbar-toggler-icon {
+	display: block;
+	width: 1.1rem;
+	height: 0.12rem;
+	margin-top: 0.35rem;
+	margin-bottom: 0.35rem;
+	border-radius: 50%;
+}
+
+.navbar-toggler-icon:first-child {
+	margin-bottom: 0.25rem;
+}
+
+.navbar-toggler-icon:nth-child(2) {
+	margin-top: 0.15rem;
+	margin-bottom: 0.15rem;
+}
+
+.navbar-toggler-icon:nth-child(3) {
+	margin-top: 0.25rem;
+}
+
+.menuMobile li.nav-item,
+.navbar-collapse li.nav-item a {
+	font-family: 'Montserrat', sans-serif;	
+}
+
+/* MENÚ HEADER */
+
+.menuMobile {
+	display: block ;
+	position: fixed;
+	overflow: visible;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	min-height: 100%;
+	z-index: 1030;
+	transform: translate3d(0, -100%, 0);
+	-webkit-transition: transform ease-in-out 0.5s !important;
+	-moz-transition: transform ease-in-out 0.5s !important;
+	-ms-transition: transform ease-in-out 0.5s !important;
+	-o-transition: transform ease-in-out 0.5s !important;
+	transition: transform ease-in-out 0.5s !important;
+}
+
+.menuMobile img {
+	display: block;
+}
+
+.menuMobile li.nav-item {
+	font-size: 0.85rem;
+	font-weight: bold;
+	letter-spacing: 1.2px;
+}
+
+.menuMobile li.nav-item a {
+	font-size: 0.65rem;
+	letter-spacing: 2px;
+}
+
+.menuMobile li.nav-item a:hover, .menuMobile li.nav-item a:active, .menuMobile li.nav-item a:focus {
+	color: #00082D;
+	font-weight: 500;
+}
+
+.btnCloseNavMenu {
+	position: relative;
+	left: -7px;
+}
+
+.carousel .layerImgCarousel {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	height: 100%;
+	background-color: rgba(0, 8, 45, 0.85);
+}
+
+.carouselMobile .carousel-item img {
+	min-height: 520px;
+}
+
+.carousel .carousel-caption {
+	bottom: 35%;
+	z-index: 5;
+	text-align: left;
+}
+
+.carousel .carousel-caption h5,
+.modalFormReservas .modal-header h5 {
+	font-size: 2.1rem;
+	font-family: 'PT Serif', serif;
+	line-height: 33px;
+	letter-spacing: -1px;
+	font-weight: 900;
+}
+
+.carousel .carousel-caption p {
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 800;
+	font-size: 1.1rem;
+	letter-spacing: 3px;
+}
+
+.carousel .divider,
+.modalFormReservas .modal-header .divider {
+	width: 55px;
+	height: 6px;
+	display: block;
+	margin-top: 1.8rem;
+	margin-bottom: 2.2rem;
+}
+
+.modalFormReservas .modal-header .divider {
+	margin-bottom: 0rem;
+}
+
+.carousel .carousel-indicators {
+	bottom: 28%;
+	justify-content: left;
+}
+
+.carousel .carousel-indicators li {
+	border-radius: 50%;
+	width: 0.9rem;
+	height: 0.9rem;
+	border: 2px solid #F9D689;
+	background-color: transparent;
+}
+
+.carousel .carousel-indicators .active {
+	background-color: #F9D689;
+}
+
+.carousel .carouselHeaderControls {
+	position: absolute;
+	left: 15%;
+	bottom: 18%;
+	z-index: 10;
+}
+
+.carousel-control-next, .carousel-control-prev {
+	position: relative;
+	display: inline-block;
+	width: 40px;
+    height: 40px;
+	border: 2px solid #F9D689;
+	padding-top: 0.15rem;
+	opacity: 1;
+	cursor: pointer;
+}
+
+.carousel-control-next:hover, .carousel-control-prev:hover, 
+.carousel-control-next:active, .carousel-control-prev:active, 
+.carousel-control-nextfocus, .carousel-control-prevfocus {
+	opacity: 0.5;
+}
+
+.carousel-control-next ion-icon, .carousel-control-prev ion-icon {
+	font-size: 26px;
+	top: 0.2rem;
+	position: relative;
+	color: #F9D689;
+}
+
+/* FOOTER */
+
+.footer img {
+	display: block;
+}
+
+.footer .copyrights {
+	font-size: 0.8rem;
+	font-weight: 500;
+}
+
+.footer .footerSiteMap span {
+	display: inline-block;
+	font-weight: bold;
+	font-size: 1.2rem;
+}
+
+.footer .footerSiteMap ul li {
+	line-height: 21px;
+	font-weight: 500;
+}
+.footer .footerSiteMap ul li a {
+	color: #F9D689;
+	font-size: 0.9rem;
+	cursor: pointer;
+}
+
+.footer .contact p {
+	font-size: 0.85rem;
+	font-weight: 500;
+}
+
+/* HOME */
+
+.containerGeneral {
+	height: 100%;
+}
+
+.imagesCarousel .flickity-slider .carousel-cell {
+	width: 70%;
+	height: auto;
+	margin-left: 10px;
+	margin-right: 10px;
+	border: 5px solid #F9D689;
+}
+
+.imagesCarousel .flickity-button {
+	position: relative;
+	bottom: -30px;
+	border: 2px solid #00082D;
+	border-radius: 0px;
+	background-color: transparent;
+}
+
+.imagesCarousel .flickity-prev-next-button{
+	width: 35px;
+	height: 35px;
+}
+
+.imagesCarousel .flickity-prev-next-button.previous {
+	left: 37%;
+}
+
+.imagesCarousel .flickity-prev-next-button.next {
+	right: -40%;
+}
+
+.imagesCarousel .flickity-button:hover, .imagesCarousel .flickity-button:active, .imagesCarousel .flickity-button:focus {
+	background-color: transparent;
+}
+
+.imagesCarousel .flickity-button-icon {
+	fill: #00082D;
+}
+
+.textoQuienesSomos p,
+ .textoComoLlegar p {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 0.95rem;
+	line-height: 27px;
+	margin-top: 2rem;
+}
+
+.textoQuienesSomos span, .textoComoLlegar span {
+	font-weight: 900;
+}
+
+.containerMap {
+	min-height: 250px;
+	border: 5px solid #F9D689;
+}
+
+
+/* MODAL FORMULARIO RESERVAS */
+
+.modalFormReservas .modal-dialog {
+	background: url('../img/Villa Apolonia WS_0002_Filtro de fotografía 1.jpg') no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-ms-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	min-height: 100%;
+}
+
+.modalFormReservas .modal-content {
+	z-index: 10;
+	background-color: transparent;
+	border: none;
+	border-radius: 0px;
+}
+
+.modalFormReservas .modal-header {
+	border: none;
+}
+
+.modalFormReservas .modal-header button {
+	float: left;
+	position: relative;
+	left: -0.5rem;
+	padding-left: 0rem;
+	padding-bottom: 0rem;
+	font-size: 2rem;
+	opacity: 1;
+}
+
+.modalFormReservas .modal-header button:hover, .modalFormReservas .modal-header button:active, .modalFormReservas .modal-header button:focus {
+	color: #FFCD97;
+}
+
+.modalFormReservas form input {
+	border-radius: 1.35rem;
+	border: 2.5px solid #FFCD97;
+	background-color: transparent;
+	color: #FFCD97;
+	font-size: 0.75rem;
+	padding: 0.65rem 1.65rem;
+	font-weight: bold;
+}
+
+.modalFormReservas input[type="number"]::-webkit-outer-spin-button,
+.modalFormReservas input[type="number"]::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.modalFormReservas form .form-group {
+	margin-bottom: 2rem !important;
+}
+
+.modalFormReservas form input::placeholder {
+	color: #FFCD97;
+	font-size: 0.75rem;
+	padding-left: 0.25rem;
+	font-weight: bold;
+}
+
+.modalFormReservas form input:hover, a.modalFormReservas form input:active, .modalFormReservas form input:focus {
+	border-color: #495057;
+	box-shadow: none;
+	background-color: transparent;
+	color: #FFCD97;
+}
+
+.modalFormReservas form button,
+.modalFormReservas form button:hover, .modalFormReservas form button:active, .modalFormReservas form button:focus,
+.modalFormReservas .confirmBookingMail button,
+.modalFormReservas .confirmBookingMail button:hover, .modalFormReservas .confirmBookingMail button:active, .modalFormReservas .confirmBookingMail button:focus {
+	border: none !important;
+	box-shadow: none !important;
+}
+
+.modalFormReservas .confirmBookingMail {
+	display: none;
+}
+
+.modalFormReservas .textInfoUser {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 0.8rem;
+	line-height: 25px;
+	font-weight: 400;
+}
+
+.modalFormReservas .textInfoUser span {
+	font-weight: 700;
+}
+
+.modalFormReservas .textConfBooking {
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	font-size: 1rem;
+	line-height: 25px;
+	font-weight: 800;
+}
+
+.modalFormReservas .gj-datepicker input {
+	border-top-right-radius: 1.35rem !important;
+	border-bottom-right-radius: 1.35rem !important;
+}
+
+.modalFormReservas .gj-datepicker:hover input, .modalFormReservas .gj-datepicker:active input, .modalFormReservas .gj-datepicker:focus input {
+	border-color: #495057;
+}
+
+.modalFormReservas .gj-datepicker span {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	padding-top: 0.18rem;
+}
+
+.modalFormReservas .gj-datepicker button {
+	color: #FFCD97;
+	border: none;
+	margin-left: auto;
+	margin-right: 0.45rem;
+}
+
+.gj-picker-bootstrap [role=header] {
+	background-color: #FFCD97;
+	color: #00082D;
+}
+
+.gj-picker-bootstrap .selected {
+	color: #00082D;
+}
+
+.gj-picker-bootstrap table tr td.today div {
+	color: #FFCD97;
+	background-color: #00082D;
+}
+
+.gj-picker-bootstrap table tr td.today div:hover,
+.gj-picker-bootstrap table tr td.today div:active,
+.gj-picker-bootstrap table tr td.today div:focus {
+	background-color: #FFCD97;
+}
+
+label.peopleIcon {
+	color: #ffcd97;
+	margin-left: auto;
+	display: block;
+	position: absolute;
+	top: 0.65rem;
+	right: 1.35rem;
+	margin-bottom: 0rem;
+	font-size: 1.45rem;
+}
+
+.layerModalFormReservas {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	height: 100%;
+	background-color: rgba(0, 8, 45, 0.87);
+}
+
+.modalFormReservas .modal-footer {
+	border: none;
+}
+
+.modalFormReservas .formMessages,
+.modalFormReservas .formMessages.success,
+.modalFormReservas .formMessages.error {
+	position: fixed;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 1050;
+	color: #FFF;
+	font-weight: bolder;
+	text-align: center;
+	font-size: 1.2rem;
+	height: auto;
+	padding: 18px 15px 10px;
+}
+
+.modalFormReservas .formMessages.success {
+	background-color: mediumseagreen;
+}
+
+.modalFormReservas .formMessages.error {
+	background-color: indianred;
+}
+
+.modal-footer button {
+	border: none;
+	box-shadow: none !important;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (min-width: 368px) {
+
+	.menuMobile img {
+		width: auto;
+		height: 115px;
+	}
+	
+	h1 {
+		font-size: 5.2rem;
+		margin-bottom: -16px;
+		line-height: 81px;
+	}
+
+	h1.second {
+		margin-bottom: 5px;
+	}
+
+	.carousel .carousel-caption h5 {
+		font-size: 2.45rem;
+		line-height: 40px;
+	}
+
+	.carousel .carousel-caption p {
+		font-size: 1.25rem;
+	}
+
+	.navbar-toggler-icon {
+		margin-bottom: 0.25rem;
+	}
+
+	.imagesCarousel .flickity-prev-next-button.previous {
+		left: 42%;
+	}
+
+	.imagesCarousel .flickity-prev-next-button.next {
+		right: -43%;
+	}
+
+	.footer .copyrights {
+		font-size: 0.85rem;
+	}
+
+}
+
+@media only screen and (min-width: 576px) {
+
+	.carousel .carousel-caption h5 {
+		font-size: 3.4rem;
+		line-height: 59px;
+	}
+
+	.carousel .divider {
+		margin-bottom: 3rem;
+	}
+
+	.carousel .carousel-caption p {
+		font-size: 1.45rem;
+	}
+
+	h1 {
+		font-size: 7.2rem;
+		line-height: 110px;
+	}
+
+	.navbarHeader {
+		height: 80px;
+	}
+
+	.navbarHeader .navbar-brand {
+		height: 45px;
+	}
+
+	.modalFormReservas .modal-dialog {
+		width: 100%;
+		max-width: 100%;
+	}
+
+	.footer .copyrights {
+		font-size: 0.9rem;
+	}
+
+}
+
+@media only screen and (min-width: 768px) {
+
+	h1 {
+		font-size: 9.2rem;
+		line-height: 145px;
+		margin-bottom: -22px;
+	}
+
+	.carousel-cell {
+		width: 45%;
+	}
+
+	.carouselMobile .carousel-item img {
+		max-height: 750px;
+	}
+
+	.tituloComoLlegar {
+		margin-top: 5rem !important;
+	}
+
+	.footer .copyrights {
+		font-size: 0.7rem;
+	}
+
+	.footer .footerSiteMap span {
+		font-size: 0.95rem;
+	}
+
+	.footer .footerSiteMap ul li {
+		line-height: 18px;
+	}
+
+	.footer .footerSiteMap ul li a {
+		font-size: 0.7rem;
+	}
+
+	.footer .contact p {
+		font-size: 0.7rem;
+	}
+
+}
+
+@media only screen and (min-width: 992px) {
+
+	.carousel.carouselDesktop .carousel-item img {
+		max-height: 560px;
+	}
+
+	.carousel .carousel-caption {
+		bottom: 32%;
+	}
+
+	.carousel .carousel-caption h5 {
+		font-size: 3rem;
+		line-height: 52px;
+	}
+
+	.carousel .divider {
+		width: 70px;
+		height: 9px;
+		margin-bottom: 3.1rem;
+	}
+
+	.carousel .carousel-indicators {
+		bottom: 23%;
+	}
+
+	.carousel .carousel-indicators li {
+		margin-right: 0.65rem;
+	}
+
+	.carousel .carouselHeaderControls {
+		left: 80%;
+		bottom: 24%;
+	}
+
+	.carousel-control-prev {
+		margin-right: 0.15rem;
+	}
+
+	h1 {
+		font-size: 11.2rem;
+		line-height: 170px;
+		margin-bottom: -26px;
+	}
+
+	.navbarHeader .navbar-brand {
+		margin-top: 5px;
+	}
+
+	.navbar-brand img {
+		height: 40px;
+	}
+
+	.navbar-collapse {
+		position: relative;
+		height: auto !important;
+	}
+
+	.navbar-collapse li.nav-item a {
+		font-size: 0.64rem;
+		margin-top: 0.8rem;
+		letter-spacing: 1px;
+	}
+
+	.navbar-collapse li.nav-item a:hover, .navbar-collapse li.nav-item a:active, .navbar-collapse li.nav-item a:focus {
+		font-weight: 600;
+		color: #00082D;
+	}
+
+	.navbar-collapse li.nav-item.follow-us a {
+		margin-top: 0rem;
+	}
+
+	.containerView {
+		padding-top: 5rem !important;
+		padding-bottom: 5rem !important;
+	}
+	
+	.imagesCarousel .flickity-slider .carousel-cell {
+		width: 45%;
+	}
+
+	.tituloComoLlegar {
+		margin-top: 5rem !important;
+	}
+
+	.locationMapCont {
+		right: 75px;
+		bottom: 75px;
+	}
+	
+	.containerMap {
+		min-height: 280px;
+	}
+
+	.textoQuienesSomos p, .textoComoLlegar p {
+		font-size: 1.1rem;
+	}
+
+	.imagesCarousel .flickity-prev-next-button.previous {
+		left: 47%;
+	}
+
+	.imagesCarousel .flickity-prev-next-button.next {
+		right: -48%;
+	}
+
+	.modalFormReservas .modal-header .btnCloseModalReservar {
+		position: absolute;
+		right: 0rem;
+		top: 1rem;
+		z-index: 10;
+	}
+
+	.modalFormReservas .modal-header button {
+		left: 0rem;
+	}
+
+	.modalFormReservas .modal-header h5 {
+		font-size: 4.1rem;
+		line-height: 66px;
+	}
+
+	.modalFormReservas form input {
+		border: 2px solid #FFCD97;
+		font-size: 0.95rem;
+		border-radius: 1.45rem;
+		padding: 0.85rem 1.65rem;
+	}
+
+	.modalFormReservas form input::placeholder {
+		font-size: 0.95rem;
+	}
+
+	.modalFormReservas .gj-datepicker input {
+		border-top-right-radius: 1.45rem !important;
+		border-bottom-right-radius: 1.45rem !important;
+	}
+
+	.modalFormReservas .gj-datepicker span {
+		padding-top: 0.4rem;
+	}
+
+	label.peopleIcon {
+		top: 0.85rem;
+	}
+
+	.modalFormReservas .modal-footer button {
+		padding: 0.7rem 3rem;
+	}
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+	.carousel.carouselDesktop .carousel-item img {
+		max-height: 600px;
+	}
+
+	.carousel .carousel-caption h5 {
+		font-size: 3.7rem;
+		line-height: 60px;
+	}
+
+	.carousel .divider {
+		margin-bottom: 4.5rem;
+	}
+
+	.carousel .carousel-caption p {
+		font-size: 1.2rem;
+	}
+
+	.containerView {
+		padding-top: 8.5rem !important;
+	}
+
+	h1 {
+		font-size: 14rem;
+		line-height: 230px;
+		margin-bottom: -45px;
+	}
+
+	.imagesCarousel .flickity-slider .carousel-cell {
+		width: 35%;
+	}
+
+	.imagesCarousel .flickity-prev-next-button.previous,
+	.imagesCarousel .flickity-prev-next-button.next {
+		display: none;
+	}
+
+	h1.second {
+		
+	}
+
+	.textoQuienesSomos {
+		right: 38px;
+		position: absolute;
+		bottom: 1170px;
+	}
+
+	.customControlsCarousel {
+		display: inline-block !important;
+		padding-left: 0.5rem;
+	}
+
+	.customControlsCarousel button.control-prev,
+	.customControlsCarousel button.control-next {
+		width: 40px;
+		height: 40px;
+		padding: 0rem;
+		background-color: transparent;
+		border: 2px solid #00082D;
+		border-radius: 0;
+	}
+
+	.customControlsCarousel button.control-prev:hover .customControlsCarousel button.control-prev:active, .customControlsCarousel button.control-prev:focus, 
+	.customControlsCarousel button.control-prev:hover, .customControlsCarousel button.control-prev:active, .customControlsCarousel button.control-next:focus {
+		box-shadow: none;
+		opacity: 0.6;
+	}
+
+	.customControlsCarousel .control-prev ion-icon,
+	.customControlsCarousel .control-next ion-icon {
+		font-size: 26px;
+		top: 0.2rem;
+		position: relative;
+	}
+
+	.locationMapCont {
+		right: 150px;
+		bottom: 43px;
+	}
+
+	.textoComoLlegar {
+		position: absolute;
+		bottom: 440px;
+		right: -35px;
+	}
+
+}
+
+@media only screen and (min-width: 1350px) {
+
+	.carousel.carouselDesktop .carousel-item img {
+		max-height: 685px;
+	}
+
+	.carousel .carousel-caption h5 {
+		font-size: 4.5rem;
+		line-height: 72px;
+	}
+
+	.carousel .carousel-caption p {
+		font-size: 1.4rem;
+	}
+
+	.carousel .carousel-indicators li {
+		margin-right: 0.9rem;
+	}
+
+	.locationMapCont {
+		right: 145px;
+		bottom: 95px;
+		max-width: 38.666667%;
+	}
+
+	.containerMap {
+		min-height: 315px;
+	}
+
+	.textoComoLlegar {
+		bottom: 545px;
+		right: -80px;
+	}
+
+}
+
+@media only screen and (min-width: 1550px) {
+
+	.carousel .carousel-caption h5 {
+		font-size: 4.8rem;
+		line-height: 80px;
+	}
+
+	.carousel .divider {
+		width: 75px;
+		height: 9px;
+		margin-top: 1.2rem;
+	}
+
+	.carousel .carousel-caption p {
+		font-size: 1.55rem;
+	}
+}
+
+@media only screen and (min-width: 1600px) {
+
+	.carousel.carouselDesktop .carousel-item img {
+		max-height: 740px;
+	}
+
+	.carousel .carousel-caption h5 {
+		font-size: 5rem;
+		line-height: 83px;
+	}
+
+}
+
+@media only screen and (min-width: 1900px) {
+
+	.carousel.carouselDesktop .carousel-item img {
+		max-height: 850px;
+	}
+
+	.carousel .carousel-caption h5 {
+		font-size: 5.8rem;
+		line-height: 100px;
+	}
+
+	.carousel .divider {
+		width: 85px;
+	}
+
+	.carousel .carousel-caption p {
+		font-size: 1.85rem;
+	}
+
+}
+
+
+@media only screen and (min-width: 2250px) {
+
+	.carousel.carouselDesktop .carousel-item img {
+		max-height: 980px;
+	}
+
+	.carousel .carousel-caption h5 {
+		font-size: 6.8rem;
+		line-height: 115px;
+	}
+
+	.carousel .divider {
+		width: 100px;
+		height: 10px;
+		margin-bottom: 5rem;
+	}
+}
+
+
+@media only screen and (min-width: 2450px) {
+
+	.carousel.carouselDesktop .carousel-item img {
+		max-height: 1080px;
+	}
+
+	.carousel .carousel-caption h5 {
+		font-size: 7.7rem;
+		line-height: 132px;
+	}
+
+	.carousel .divider {
+		width: 115px;
+	}
+
+	.carousel .carousel-caption p {
+		font-size: 2.45rem;
+	}
+}
