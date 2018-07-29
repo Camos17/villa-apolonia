@@ -82,7 +82,7 @@
                                         <span style="margin-bottom: 7px;"><span style="display: inline-block; font-weight: bold;">Teléfono:</span> '. $telephone .'<br></span>
                                         <span style="margin-bottom: 7px;"><span style="display: inline-block; font-weight: bold;">Comentario:</span> ' . $comment . '<br></span>
                                         <span style="margin-bottom: 7px;"><span style="display: inline-block; font-weight: bold;">Fecha Incio Reserva:</span> ' . $startDate . '<br></span>
-                                        <span style="margin-bottom: 7px;"><span style="display: inline-block; font-weight: bold;">Fecha Fin Reservas:</span> ' . $endDate . '<br></span>
+                                        <span style="margin-bottom: 7px;"><span style="display: inline-block; font-weight: bold;">Fecha Fin Reserva:</span> ' . $endDate . '<br></span>
                                         <span style="margin-bottom: 7px;"><span style="display: inline-block; font-weight: bold;">Número Perosnas:</span> ' . $numPersons . '<br></span>
                                     </p>
                                 </div>
@@ -92,7 +92,7 @@
                             </div>
                         </div>';
         // Build the email headers.
-        $email_headers = "From: $name <$email>";
+        // $email_headers = "From: $name <$email>";
 
         // Send the email.
         if ($mail->send()) {
@@ -108,7 +108,7 @@
     } else {
         // Not a POST request, set a 403 (forbidden) response code.
         http_response_code(403);
-        echo "There was a problem with your submission, please try again.";
+        echo "Se ha presentando un problema al enviar tu solicutd, por favor intentálo de nuevo más tarde.";
     }
 
 ?>

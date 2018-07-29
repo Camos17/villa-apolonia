@@ -11,6 +11,10 @@ body.modal-open {
 	padding-right: 0px !important;
 }
 
+body.fixed {
+	position: fixed;
+}
+
 .modalFormReservas.show {
 	padding-right: 0px !important;
 	overflow-y: auto;
@@ -89,6 +93,11 @@ button:hover, button:active, button:focus {
 	color: #00082D;
 }
 
+.lightbox .lb-image {
+	border: 4px solid #FFCD97;
+	border-radius: 0px;
+}
+
 /* HELPERS */
 
 .showHeaderMenu {
@@ -117,7 +126,7 @@ button:hover, button:active, button:focus {
 	transition: transform ease-in-out 0.5s !important;
 }
 
-/* PRE-LOADER */
+/* PRE-LOADER - LOADER */
 
 .bluePre-loader {
 	position: fixed;
@@ -272,8 +281,22 @@ button:hover, button:active, button:focus {
 	background-color: rgba(0, 8, 45, 0.85);
 }
 
+.carouselMobile .carousel-item.active {
+	overflow: hidden;
+}
+
 .carouselMobile .carousel-item img {
-	min-height: 520px;
+	max-height: 520px;
+	height: 100%;
+	width: auto !important;
+	position: relative;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+	overflow: hidden;
 }
 
 .carousel .carousel-caption {
@@ -385,11 +408,27 @@ button:hover, button:active, button:focus {
 	color: #F9D689;
 	font-size: 0.9rem;
 	cursor: pointer;
+	line-height: 18px;
+}
+
+.footer .contact span {
+	display: inline-block;
+	font-weight: bold;
 }
 
 .footer .contact p {
 	font-size: 0.85rem;
 	font-weight: 500;
+}
+
+.footer .contact p a {
+	color: #FFCD97;
+}
+
+.footer .contact p a:hover, .footer .contact p a:active, .footer .contact p a:focus {
+	color: #FFCD97;
+	text-decoration: underline;
+	cursor: pointer;
 }
 
 /* HOME */
@@ -436,7 +475,7 @@ button:hover, button:active, button:focus {
 }
 
 .textoQuienesSomos p,
- .textoComoLlegar p {
+.textoComoLlegar p {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 0.95rem;
 	line-height: 27px;
