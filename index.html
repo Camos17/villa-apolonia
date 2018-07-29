@@ -142,20 +142,20 @@
 				<div class="collapse navbar-collapse no-transition d-none d-lg-block" id="navbarSupportedContent1">
 					<ul class="col-lg-12 p-0 navbar-nav mr-auto">
 						<li class="col-lg-3 nav-item mb-5 mb-lg-0 active">
-							<a class="nav-link textDarkBlue px-lg-0" href="#quienesSomos">QUIÉNES SOMOS
+							<a class="nav-link textDarkBlue px-lg-0 linkHeaderSmooth" href="#quienesSomos">QUIÉNES SOMOS
 								<span class="sr-only">(current)</span>
 							</a>
 						</li>
 						<li class="col-lg-3 nav-item mb-5 mb-lg-0">
-							<a class="nav-link textDarkBlue px-lg-0" href="#comoLlegar">¿CÓMO LLEGAR?</a>
+							<a class="nav-link textDarkBlue px-lg-0 linkHeaderSmooth" href="#comoLlegar">¿CÓMO LLEGAR?</a>
 						</li>
 						<li class="col-lg-3 nav-item mb-5 mb-lg-0">
-							<a class="nav-link textDarkBlue px-lg-0" href="#btnReservar">RESERVAS</a>
+							<a class="nav-link textDarkBlue px-lg-0 linkHeaderSmooth" href="#btnReservar">RESERVAS</a>
 						</li>
 						<li class="col-lg-3 nav-item mb-lg-0 follow-us">
-							<span class="textDarkBlue"></span>SÍGUENOS</span>
-							<a class="nav-link textDarkBlue p-0" href="#">Airbnb</a>
-							<a class="nav-link textDarkBlue p-0" href="#">Booking.com</a>
+							<span class="textDarkBlue"></span>CONOCE MÁS</span>
+							<a class="nav-link textDarkBlue p-0" href="https://www.airbnb.es/rooms/24306307?s=51" target="_blank">Airbnb</a>
+							<a class="nav-link textDarkBlue p-0" href="http://www.booking.com/Share-tBMO54" target="_blank">Booking.com</a>
 						</li>
 					</ul>
 				</div>
@@ -171,20 +171,20 @@
 				</div>
 				<ul class="navbar-nav mr-auto text-center">
 					<li class="nav-item mb-5 active">
-						<a class="nav-link textDarkBlue" href="#quienesSomos">QUIÉNES SOMOS
+						<a class="nav-link textDarkBlue linkHeaderSmooth" href="#quienesSomos">QUIÉNES SOMOS
 							<span class="sr-only">(current)</span>
 						</a>
 					</li>
 					<li class="nav-item mb-5">
-						<a class="nav-link textDarkBlue" href="#comoLlegar">¿CÓMO LLEGAR?</a>
+						<a class="nav-link textDarkBlue linkHeaderSmooth" href="#comoLlegar">¿CÓMO LLEGAR?</a>
 					</li>
 					<li class="nav-item mb-5">
-						<a class="nav-link textDarkBlue" href="#btnReservar">RESERVAS</a>
+						<a class="nav-link textDarkBlue linkHeaderSmooth" href="#btnReservar">RESERVAS</a>
 					</li>
 					<li class="nav-item follow-us">
 						<span class="textDarkBlue"></span>SÍGUENOS</span>
-						<a class="nav-link textDarkBlue p-0 linkMobMenuHeader" href="#">Airbnb</a>
-						<a class="nav-link textDarkBlue p-0 linkMobMenuHeader" href="#">Booking.com</a>
+						<a class="nav-link textDarkBlue p-0 linkMobMenuHeader" href="https://www.airbnb.es/rooms/24306307?s=51" target="_blank">Airbnb</a>
+						<a class="nav-link textDarkBlue p-0 linkMobMenuHeader" href="http://www.booking.com/Share-tBMO54" target="_blank">Booking.com</a>
 					</li>
 				</ul>
 			</div>
@@ -247,8 +247,7 @@
 				<div class="col-12 col-xl-7 p-0 textoComoLlegar">
 					<div class="col-12 col-sm-10 col-md-7 col-lg-8 mt-4 mx-sm-auto">
 						<p class="px-2 textDarkBlue">
-							<span>El hotel queda por toda la via principal de Guaduas</span> frente al Hospital San José. La fachada es la de una casa blanca de estilo
-							colonial con puertas pintadas de verde.
+							<span>El hotel queda por la via principal de Guaduas</span> frente al Hospital San José. La fachada es la de una casa blanca de estilo colonial con puertas pintadas de verde.
 						</p>
 					</div>
 					<div id="btnReservar" class="col-9 col-sm-6 col-md-5 col-lg-4 mt-5 mt-xl-3 mx-auto btnReservar">
@@ -279,7 +278,7 @@
 					<div class="col-12 col-sm-7 mx-sm-auto col-md-3 col-lg-4 mt-4 p-0 contact">
 						<div class="col-7 col-sm-10 col-md-7 col-lg-6 p-0 mx-auto ml-lg-auto mr-lg-0">
 							<span class="textLightOrange mb-3">Contáctanos</span>
-							<p class="textLightOrange"><a href="mailto:villa.apolonia57@gmail.com">villa.apolonia57@gmail.com</a> <br> <a href="tel:3164828057">3164828057</a> <br> <a class="footerLinkLocation" href="#comoLlegar">Calle 4 No 12-48</a> </p>
+							<p class="textLightOrange"><a href="mailto:villa.apolonia57@gmail.com">villa.apolonia57@gmail.com</a> <br> <a href="tel:3164828057">+57 3164828057</a> <br> <a class="footerLinkLocation" href="#comoLlegar">Calle 4 No 12-48</a> </p>
 						</div>
 					</div>
 				</div>
@@ -444,7 +443,7 @@
 		// - Smooth Scrolling Menu Header and Footer
 		$(document).ready(function () {
 			// - Mobile
-			$('.menuMobile a').click(function (event) {
+			$('.menuMobile a.linkHeaderSmooth').click(function (event) {
 				event.preventDefault();
 				$('.menuMobile').addClass('hideHeaderMenu');
 				var link = this;
@@ -457,7 +456,7 @@
 			});
 
 			// - Desktop
-			$('#navbar .navbar-collapse a').click(function (event) {
+			$('#navbar .navbar-collapse a.linkHeaderSmooth').click(function (event) {
 				event.preventDefault();
 				var link = this;
 				console.log(link.hash);
@@ -828,7 +827,6 @@
 				url: 'mailer.php',
 				data: formData
 			}).done(function (response) {
-				console.log(response);
 				// alert('Submitting Form Success');
 				// Ensure formMessages div has the 'success' class.
 				$(formMessages).removeClass('error');
