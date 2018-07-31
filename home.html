@@ -20,7 +20,7 @@
 	<link rel="stylesheet" href="css/style.css" />
 	
 </head>
-<body class="">
+<body class="fixed">
 	<div id="inicio" class="col-12 p-0 container containerGeneral">
 		<!-- Container Vista -->
 		<div class="row no-gutters containerHome">
@@ -935,8 +935,8 @@
 				if (current == 100) {
 					setTimeout(function () {
 						$('.lightPre-loader').fadeOut('slow');
-						$('body').removeClass('fixed');
 					}, 500);
+					$('body').removeClass('fixed');
 				}
 			}, stepTime+25);
 		}
