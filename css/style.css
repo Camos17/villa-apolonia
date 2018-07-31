@@ -539,6 +539,10 @@ button:hover, button:active, button:focus {
 	font-weight: bold;
 }
 
+.modalFormReservas input[type="number"] {
+	-moz-appearance: textfield;
+}
+
 .modalFormReservas input[type="number"]::-webkit-outer-spin-button,
 .modalFormReservas input[type="number"]::-webkit-inner-spin-button {
     /* display: none; <- Crashes Chrome on hover */
