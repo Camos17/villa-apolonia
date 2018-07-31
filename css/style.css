@@ -967,6 +967,10 @@ label.peopleIcon {
 		padding: 0.7rem 3rem;
 	}
 
+	.footer .copyrights {
+		font-size: 0.8rem;
+	}
+
 }
 
 @media only screen and (min-width: 1200px) {
@@ -1053,7 +1057,7 @@ label.peopleIcon {
 	.textoComoLlegar {
 		position: absolute;
 		bottom: 440px;
-		right: -35px;
+		right: -40px;
 	}
 
 }

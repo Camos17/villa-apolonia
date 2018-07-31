@@ -258,14 +258,15 @@
 		</div>
 		
 		<footer class="footer bgColor-darkBlue py-5">
-			<div class="container">
+			<div class="container-fluid">
 				<div class="row">
-					<div class="col-12 col-sm-7 mx-sm-auto p-0 col-md-6 col-lg-5">
-						<img class="img-fluid col-6 mx-auto p-0" src="img/logoLightOrangeStack.png" alt="Logo Footer">
-						<p class="col-7 col-sm-10 col-md-8 col-lg-7 p-0 mx-auto mt-4 textLightOrange copyrights">Todos los derechos reservados 2018 <br> Developed by: CannedHead <br> Design By: Valo</p>
+					<div class="col-12 col-sm-7 mx-sm-auto mt-sm-4 p-0 col-md-6 col-lg-5">
+						<img class="img-fluid col-6 col-sm-8 mx-auto p-0 d-md-none" src="img/logoLightOrangeStack.png" alt="Logo Footer">
+						<img class="img-fluid col-md-8 col-lg-9 mx-auto ml-lg-auto mr-lg-0 p-0 d-none d-md-block" src="img/logoLightOrangeInline.png" alt="Logo Footer">
+						<p class="col-7 col-sm-10 col-md-8 col-lg-9 p-0 mx-auto ml-lg-auto mr-lg-0 mt-4 textLightOrange copyrights">Todos los derechos reservados 2018 <br> Developed by: CannedHead <br> Design By: Valo</p>
 					</div>
 					<div class="col-12 col-sm-7 mx-sm-auto col-md-3 col-lg-3 mt-4 p-0 footerSiteMap">
-						<div class="col-7 col-sm-10 col-md-8 col-lg-6 p-0 mx-auto ml-lg-auto mr-lg-0">
+						<div class="col-7 col-sm-10 col-md-9 col-lg-6 col-xl-5 p-0 mx-auto ml-lg-auto mr-lg-0">
 							<span class="textLightOrange mb-3">Sitio Web</span>
 							<ul class="col-12 p-0 textLightOrange">
 								<li><a href="#inicio">Inicio</a></li>
@@ -275,14 +276,14 @@
 							</ul>
 						</div>
 					</div>
-					<div class="col-12 col-sm-7 mx-sm-auto col-md-3 col-lg-4 mt-4 p-0 contact">
-						<div class="col-7 col-sm-10 col-md-7 col-lg-6 p-0 mx-auto ml-lg-auto mr-lg-0">
+					<div class="col-12 col-sm-7 col-md-3 col-lg-4 mt-4 mx-sm-auto p-0 contact">
+						<div class="col-7 col-sm-10 col-md-10 col-lg-9 col-xl-8 p-0 mx-auto ml-lg-auto mr-lg-0">
 							<span class="textLightOrange mb-3">Contáctanos</span>
-							<p class="textLightOrange"><a href="mailto:villa.apolonia57@gmail.com">villa.apolonia57@gmail.com</a> <br> <a href="tel:3164828057">+57 3164828057</a> <br> <a class="footerLinkLocation" href="#comoLlegar">Calle 4 No 12-48</a> </p>
+							<p class="textLightOrange"><a href="mailto:villa.apolonia57@gmail.com">villa.apolonia57@gmail.com</a> <br> <a href="tel:3164828057">+57 3164828057</a> <br> <a class="footerLinkLocation" href="#map">Calle 4 No 12-48</a> </p>
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> 
 	
 	</div>
 
@@ -774,7 +775,7 @@
 			var marker = new google.maps.Marker({ position: location, map: map, icon: mapIcon });
 			marker.addListener('click', function() {
 				map.panTo(marker.getPosition());
-				map.setZoom(16);
+				map.setZoom(18);
 			});
 			map.addListener('click', function () {
 				window.setTimeout(function () {
