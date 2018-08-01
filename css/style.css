@@ -256,6 +256,7 @@ button:hover, button:active, button:focus {
 	-ms-transform: translateY(-65%);
 	-o-transform: translateY(-65%);
 	transform: translateY(-65%);
+	overflow-Y: auto;
 }
 
 .menuMobile img {
@@ -754,6 +755,10 @@ label.peopleIcon {
 
 @media only screen and (min-width: 576px) {
 
+	.carouselMobile .carousel-item img {
+		max-height: 695px;
+	}
+
 	.carousel .carousel-caption h5 {
 		font-size: 3.4rem;
 		line-height: 59px;
@@ -1035,7 +1040,7 @@ label.peopleIcon {
 	.textoQuienesSomos {
 		right: 38px;
 		position: absolute;
-		bottom: 1170px;
+		bottom: 285px;
 	}
 
 	.customControlsCarousel {
@@ -1067,14 +1072,14 @@ label.peopleIcon {
 	}
 
 	.locationMapCont {
-		right: 150px;
-		bottom: 43px;
+		right: 15px;
+    	bottom: 105px;
 	}
 
 	.textoComoLlegar {
 		position: absolute;
-		bottom: 440px;
-		right: -40px;
+		bottom: 433px;
+    	right: -165px;
 	}
 
 }
