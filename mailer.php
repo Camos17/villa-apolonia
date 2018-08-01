@@ -91,8 +91,6 @@
                                 </div>
                             </div>
                         </div>';
-        // Build the email headers.
-        // $email_headers = "From: $name <$email>";
 
         // Send the email.
         if ($mail->send()) {
