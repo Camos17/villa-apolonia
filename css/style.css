@@ -1103,6 +1103,10 @@ label.peopleIcon {
 		margin-right: 0.9rem;
 	}
 
+	.textoQuienesSomos {
+		bottom: 335px;
+	}
+
 	.locationMapCont {
 		right: 145px;
 		bottom: 95px;
@@ -1149,6 +1153,11 @@ label.peopleIcon {
 		line-height: 83px;
 	}
 
+	.textoQuienesSomos {
+		bottom: 350px;
+		width: 535px;
+	}
+
 }
 
 @media only screen and (min-width: 1900px) {
@@ -1169,6 +1178,28 @@ label.peopleIcon {
 	.carousel .carousel-caption p {
 		font-size: 1.85rem;
 	}
+	
+	h1 {
+		font-size: 21rem;
+    	line-height: 325px;
+	}
+
+	.textoQuienesSomos {
+		bottom: 470px;
+		right: 185px;
+	}
+
+	.locationMapCont {
+		right: 125px;
+		bottom: 125px;
+	}
+
+	.textoComoLlegar {
+		bottom: 625px;
+		right: -210px;
+	}
+
+
 
 }
 
