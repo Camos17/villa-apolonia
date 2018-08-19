@@ -31,19 +31,19 @@
     $mail->SMTPAuth = true;
 
     //Username to use for SMTP authentication - use full email address for gmail
-    $mail->Username = "camos8710@gmail.com";
+    $mail->Username = "villa.apolonia57@gmail.com";
 
     //Password to use for SMTP authentication
-    $mail->Password = "kmosa-200511725";
+    $mail->Password = "Villadeguaduas2018!";
 
     //Set who the message is to be sent from
-    $mail->setFrom('camos8710@gmail.com', 'Villa Apolonia');
+    $mail->setFrom('villa.apolonia57@gmail.com', 'Villa Apolonia');
 
     //Set an alternative reply-to address
     $mail->addReplyTo('no-reply@villaapolonia.com', 'No-Reply');
 
     //Set who the message is to be sent to
-    $mail->addAddress('camos8710@gmail.com', 'Villa Apolonia');
+    $mail->addAddress('villa.apolonia57@gmail.com', 'Villa Apolonia');
 
     $mail->AltBody = 'Es posible que la información proporcionada por el cliente no se haya enviado correctamente';
     $mail->addAttachment('img/logoLightOrangeStack.png', 'Logo-Email-VP');

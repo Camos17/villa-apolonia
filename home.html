@@ -427,8 +427,6 @@
 			function detectOrientation() {
 				var viewportHeight = window.innerHeight;
 				var viewportWidth = window.innerWidth;
-				console.log(viewportHeight);
-				console.log(viewportWidth);
 
 				if (viewportHeight < viewportWidth) {
 					// alert("You're in Lanscape mode");
@@ -494,7 +492,6 @@
 				event.preventDefault();
 				$('body').removeClass('fixed');
 				var link = this;
-				console.log(link.hash);
 				$.smoothScroll({
 					scrollTarget: link.hash,
 					offset: -180,
@@ -855,8 +852,6 @@
 			var numPersonas = $('#numPersonas').val();
 
 			var formData = $('#formReservas').serialize();
-			console.log(formData);
-			console.log(name);
 
 			$.ajax({
 				type: 'POST',
@@ -869,7 +864,7 @@
 				$(formMessages).addClass('success');
 
 				// Set the message text.
-				$(formMessages).text('Gracias! Tu mensaje ha sido enviado correctamente.');
+				$(formMessages).text('Gracias! Tu reserva ha sido enviada correctamente.');
 				$(formMessages).fadeIn('slow');
 				setTimeout(function () {
 					$(formMessages).fadeOut('slow');
@@ -949,7 +944,6 @@
 			time = parseInt((EstimatedTime / 1000) % 60) * 100; //Converting EstimatedTime from miliseconds to seconds.
 			duration = time;
 
-		console.log(time);
 		animateLoader($('.percentLoader span'), 0, 100, duration);
 
 		function animateLoader(id, start, end, duration) {
